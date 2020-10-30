@@ -6,7 +6,7 @@ import org.openqa.selenium.remote.server.handler.ClickElement;
 import commons.AbstractPages;
 import commons.PageGeneratorManager;
 import pageUIs.liveguru.AbstractPageUI;
-import pageUIs.liveguru.AddLiveGuruPageUI;
+import pageUIs.liveguru.AddCustomerLiveGuruPageUI;
 import pageUIs.liveguru.EditCustomerLiveGuruPageUI;
 
 public class EditCustomerLiveGuruPageObjects extends AbstractPages {
@@ -34,8 +34,8 @@ public class EditCustomerLiveGuruPageObjects extends AbstractPages {
 	}
 
 	public ManagerLiveGuruPageObjects clickToSubmitButton() {
-		waitElementClickable(driver, AddLiveGuruPageUI.SUBMIT_BUTTON);
-		clickToElement(driver, AddLiveGuruPageUI.SUBMIT_BUTTON);
+		waitElementClickable(driver, AddCustomerLiveGuruPageUI.SUBMIT_BUTTON);
+		clickToElement(driver, AddCustomerLiveGuruPageUI.SUBMIT_BUTTON);
 		return PageGeneratorManager.getManagerLiveGuruPage(driver);
 	}
 

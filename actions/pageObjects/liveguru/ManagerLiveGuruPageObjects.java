@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import commons.AbstractPages;
 import commons.PageGeneratorManager;
 import pageUIs.liveguru.AbstractPageUI;
-import pageUIs.liveguru.AddLiveGuruPageUI;
+import pageUIs.liveguru.AddCustomerLiveGuruPageUI;
 import pageUIs.liveguru.ManagerLiveGuruPageUI;
 
 public class ManagerLiveGuruPageObjects extends AbstractPages{

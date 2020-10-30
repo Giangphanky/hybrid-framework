@@ -24,7 +24,7 @@ public class CustomerLiveGuruData {
 	}
 
 	public class CollumNameRegistered {
-		public static final String CUSTOMER = "Customer Name";
+		public static final String CUSTOMER_NAME = "Customer Name";
 		public static final String GENDER = "Gender";
 		public static final String DOB = "Birthdate";
 		public static final String ADDRESS = "Address";
@@ -41,6 +41,87 @@ public class CustomerLiveGuruData {
 		public static final String TRANSACTION_ID = "Transaction ID";
 		public static final String AMOUNT_FUNTRANSFER = "Amount";
 		public static final String BALANCE_INQUIRY = "Balance";
+	}
+	
+	public class TitleTextboxNewCustomer {
+		public static final String CUSTOMER_NAME = "Customer Name";
+		public static final String GENDER = "Gender";
+		public static final String DOB = "Date of Birth";
+		public static final String ADDRESS = "Address";
+		public static final String CITY = "City";
+		public static final String STATE = "State";
+		public static final String PIN = "PIN";
+		public static final String MOBILE = "Mobile Number";
+		public static final String EMAIL = "E-mail";
+		public static final String PASSWORD = "Password";
+	}
+	
+	public class NCMessage {
+		public static final String CUSTOMER_NAME_BLANK = "Customer name must not be blank";
+		public static final String CUSTOMER_NAME_NUMBER = "Numbers are not allowed";
+		public static final String CUSTOMER_NAME_SPECIAL_CHAR = "Special characters are not allowed";
+		public static final String CUSTOMER_NAME_BLANK_FIRST = "First character can not have space";
+		
+		public static final String ADDRESS_BLANK = "Address Field must not be blank";
+		public static final String ADDRESS_BLANK_FIRST = "First character can not have space";
+		
+		public static final String CITY_BLANK = "City Field must not be blank";
+		public static final String CITY_NUMBER = "Numbers are not allowed";
+		public static final String CITY_SPECIAL_CHAR = "Special characters are not allowed";
+		public static final String CITY_BLANK_FIRST = "First character can not have space";
+		
+		public static final String STATE_BLANK = "State must not be blank";
+		public static final String STATE_NUMBER = "Numbers are not allowed";
+		public static final String STATE_SPECIAL_CHAR = "Special characters are not allowed";
+		public static final String STATE_BLANK_FIRST = "First character can not have space";
+		
+		public static final String PIN_BLANK = "PIN Code must not be blank";
+		public static final String PIN_CHARACTERS = "Characters are not allowed";
+		public static final String PIN_SPECIAL_CHAR = "Special characters are not allowed";
+		public static final String PIN_BLANK_FIRST = "First character can not have space";
+		public static final String PIN_HAVE_BLANK = "Characters are not allowed";
+		public static final String PIN_MUST_HAVE_6_DIGITS = "PIN Code must have 6 Digits";
+		
+		public static final String MOBILE_BLANK = "Mobile no must not be blank";
+		public static final String MOBILE_SPECIAL_CHAR = "Special characters are not allowed";
+		public static final String MOBILE_HAVE_BLANK = "Characters are not allowed";
+		public static final String MOBILE_BLANK_FIRST = "First character can not have space";
+		
+		public static final String EMAIL_BLANK = "Email-ID must not be blank";
+		public static final String EMAIL_INCORRECT_FORMAT = "Email-ID is not valid";
+		public static final String EMAIL_HAVE_SPACE = "Email-ID is not valid";
+		public static final String EMAIL_BLANK_FIRST = "First character can not have space";
+	}
+	
+	public class InvalidNCRegister {
+		public static final String NAME_NUMBERIC = "1234";
+		public static final String NAME_SPECIAL_CHAR = "GIANG!@#";
+		public static final String NAME_BLANK_FIRST = " GIANG";
+		
+		public static final String ADDRESS_BLANK_FIRST = " HaTinh";
+		
+		public static final String CITY_NUMBERIC = "HaTinh1234";
+		public static final String CITY_SPECIAL_CHAR = "HaTinh!@#";
+		public static final String CITY_BLANK_FIRST = " HaTinh";
+		
+		public static final String STATE_NUMBERIC = "ThachHa1234";
+		public static final String STATE_SPECIAL_CHAR = "ThachHa!@#";
+		public static final String STATE_BLANK_FIRST = " ThachHa";
+		
+		public static final String PIN_NOT_NUMBERIC = "PIN234";
+		public static final String PIN_MORE_THAN_6_DIGITS = "1234567";
+		public static final String PIN_LESS_THAN_6_DIGITS = "123";
+		public static final String PIN_BLANK_FIRST = " 12345";
+		public static final String PIN_HAVE_BLANK = "123 45";
+		public static final String PIN_SPECIAL_CHAR = "123@#1";
+		
+		public static final String MOBILE_SPECIAL_CHAR = "886636!@12	";
+		public static final String MOBILE_HAVE_BLANK = "123 123";
+		public static final String MOBILE_BLANK_FIRST = " 123456";
+		
+		public static final String EMAIL_INCORRECT_FORMAT = "giangpk33@gmail.";
+		public static final String EMAIL_HAVE_SPACE = "giang pk33@gmail.com";
+		public static final String EMAIL_BLANK_FIRST = " giangpk33@gmail.com";
 	}
 
 	public class ClassNameAddTable {

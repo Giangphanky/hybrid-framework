@@ -32,7 +32,7 @@ import pageObjects.wordpress.admin.DashboardPageObjects;
 import pageObjects.wordpress.user.HomePageObjects;
 import pageObjects.wordpress.user.PostDetailPageObjects;
 import pageObjects.wordpress.user.SearchResultPageObjects;
-import pageUIs.liveguru.AddLiveGuruPageUI;
+import pageUIs.liveguru.AddCustomerLiveGuruPageUI;
 import pageUIs.liveguru.EditCustomerLiveGuruPageUI;
 import pageUIs.liveguru.NewAccountLiveGuruPageUI;
 import pageUIs.liveguru.WithdrawLiveGuruPageUI;
@@ -333,7 +333,13 @@ public abstract class AbstractPages {
 
 	public void sendKeyBoardToElement(WebDriver driver, String xpathValue, Keys key) {
 		action = new Actions(driver);
-		action.sendKeys(find(driver, xpathValue), key);
+		action.sendKeys(find(driver, xpathValue), key).perform();
+	}
+	
+	public void sendKeyBoardToElement(WebDriver driver, String xpathValue, Keys key, String ...values) {
+		xpathValue = castRestParameter(xpathValue, values);
+		action = new Actions(driver);
+		action.sendKeys(find(driver, xpathValue), key).perform();
 	}
 	
 	public void sendKeyBoardToElementToClear(WebDriver driver, String xpathValue) {

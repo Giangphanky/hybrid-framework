@@ -79,7 +79,7 @@ public class Payment extends AbstractTest {
 		managerPage = addPage.clickToSubmitButton();
 
 		// verify create success
-		verifyTrue(managerPage.isInformationDisplayedByText(CustomerLiveGuruData.CollumNameRegistered.CUSTOMER,
+		verifyTrue(managerPage.isInformationDisplayedByText(CustomerLiveGuruData.CollumNameRegistered.CUSTOMER_NAME,
 				CustomerLiveGuruData.NewCustomer.CUSTOMER_NAME));
 		verifyTrue(managerPage.isInformationDisplayedByText(CustomerLiveGuruData.CollumNameRegistered.DOB,
 				CustomerLiveGuruData.NewCustomer.DOB));
@@ -130,7 +130,7 @@ public class Payment extends AbstractTest {
 		
 		verifyTrue(managerPage.isMessageSuccessDisplayed(CustomerLiveGuruData.Message.UPDATED_SUCCESS_MESSAGE));
 		// verify edit success
-		verifyTrue(managerPage.isInformationDisplayedByText(CustomerLiveGuruData.CollumNameRegistered.CUSTOMER,
+		verifyTrue(managerPage.isInformationDisplayedByText(CustomerLiveGuruData.CollumNameRegistered.CUSTOMER_NAME,
 				CustomerLiveGuruData.NewCustomer.CUSTOMER_NAME));
 		verifyTrue(managerPage.isInformationDisplayedByText(CustomerLiveGuruData.CollumNameRegistered.DOB,
 				CustomerLiveGuruData.NewCustomer.DOB));

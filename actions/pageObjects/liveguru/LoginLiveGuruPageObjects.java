@@ -1,10 +1,13 @@
 package pageObjects.liveguru;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.seleniumhq.jetty9.http.PreEncodedHttpField;
 
 import commons.AbstractPages;
 import commons.PageGeneratorManager;
 import pageObjects.wordpress.admin.DashboardPageObjects;
+import pageUIs.liveguru.AbstractPageUI;
 import pageUIs.liveguru.LoginLiveGuruPageUI;
 import pageUIs.wordpress.admin.LoginPageUI;
 
@@ -30,6 +33,5 @@ public class LoginLiveGuruPageObjects extends AbstractPages{
 		waitElementVisible(driver, LoginLiveGuruPageUI.PASSWORD_TEXTBOX);
 		sendKeysToElement(driver, LoginLiveGuruPageUI.PASSWORD_TEXTBOX, password);
 	}
-
 
 }

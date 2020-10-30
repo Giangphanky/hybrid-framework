@@ -4,7 +4,7 @@ public abstract class AbstractPageUI {
 	public static final String LIVEGURU_DYNAMIC_LINK = "//ul[@class='menusubnav']/li/a[text()='%s']";
 	
 	public static final String UP_LOAD_FILE_TYPE = "//input[@type='file']";
-	public static final String DYNAMIC_INPUT_TEXTBOX_BY_CLASS_NAME = "//input[@name='%s']";
+	public static final String DYNAMIC_INPUT_TEXTBOX_BY_CLASS_NAME = "//*[@name='%s']";
 	public static final String DOB_TEXTBOX = "//input[@name='dob']";
 	public static final String ADDRESS_TEXTBOX = "//textarea[@name='addr']";
 	
